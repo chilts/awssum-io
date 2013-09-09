@@ -56,6 +56,7 @@ echo
 # restart the service
 echo "Restarting services ..."
 sudo service awssum-io restart
+sudo service proximity restart
 echo
 
 ## --------------------------------------------------------------------------------------------------------------------
