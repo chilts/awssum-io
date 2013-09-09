@@ -6,9 +6,14 @@ html(lang="en")
     title AwsSum &ndash; Node.js library to talk to lots of Web APIs.
     link(rel="stylesheet",href="http://yui.yahooapis.com/pure/0.2.1/pure-min.css")
     link(rel="stylesheet",href="/s/css/style.css")
-    script(src="http://use.typekit.net/ajf8ggy.js")
     script.
-      try { Typekit.load(); } catch (e) {}
+      var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-17218498-4']); _gaq.push(['_trackPageview']);
+      (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:'===document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+      })();
+
   body
 
     #layout.pure-g-r.content
