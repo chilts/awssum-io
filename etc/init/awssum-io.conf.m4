@@ -7,7 +7,7 @@
 ## ----------------------------------------------------------------------------
 
 # info
-description awssum-io - Node.js libraries to talk to lots of Web APIs."
+description "awssum-io - Node.js libraries to talk to lots of Web APIs."
 author      "Andrew Chilton"
 
 # respawn this task
