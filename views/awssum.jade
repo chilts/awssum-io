@@ -1,0 +1,28 @@
+extends layout.jade
+
+block page
+  .content
+    .content-header.pure-g
+      .pure-u-1-2
+        h1.content-title= awssum.name
+        p.content-subtitle
+          |  
+          span v#{awssum.package.version}
+          | , 
+          a(href="http://npm.im/#{awssum.name}") npm</a>
+          | , 
+          a(href="https://github.com/awssum/#{awssum.name}") github
+          | .
+
+      .pure-u-1-2.content-controls
+        for item in awssum.submenu
+          a.pure-button.secondary-button(href="#{item.href}")= item.title
+
+    .content-body
+      h2 AwsSum
+
+      h3 Installing
+
+      p.
+        This top-level package will be installed alongside any awssum-&lt;provider&gt;-&lt;service&gt; so there is no need to depend
+        on it directly from your <code>package.json</code> or install it separately.

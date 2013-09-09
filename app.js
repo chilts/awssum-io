@@ -39,7 +39,7 @@ if ('development' == app.get('env')) {
 }
 
 app.get('/', function(req, res, next) {
-    res.render('index', {
+    res.render('awssum', {
         awssum    : awssum,
         providers : providers,
         services  : services,
