@@ -49,7 +49,7 @@ app.get('/:provider', function(req, res, next) {
     }
 
     var data = providers[path];
-    res.render(data.page, {
+    res.render('provider', {
         provider : data
     });
 
@@ -67,7 +67,7 @@ app.get('/:provider/:service', function(req, res, next) {
     }
 
     var data = services[path];
-    res.render(data.page, {
+    res.render('service', {
         service : data
     });
 });
