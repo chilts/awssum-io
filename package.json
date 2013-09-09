@@ -1,0 +1,19 @@
+{
+    "name": "awssum-io",
+    "version": "0.1.0",
+    "private": true,
+
+    "scripts": {
+        "start": "node app.js"
+    },
+
+    "dependencies": {
+        "awssum-amazon-s3"             : "*",
+        "awssum-amazon-ec2"            : "*",
+        "awssum-amazon-cloudformation" : "*",
+        "awssum-amazon-dynamodb"       : "*",
+
+        "express": "3.4.0",
+        "jade": "*"
+    }
+}

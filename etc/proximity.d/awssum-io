@@ -1,0 +1,23 @@
+;; ----------------------------------------------------------------------------
+
+[www.awssum.localhost.chilts.org]
+type=redirect
+to=awssum.io
+
+[awssum.localhost.chilts.org]
+type=proxy
+host=localhost
+port=9367
+
+;; ----------------------------------------------------------------------------
+
+[www.awssum.io]
+type=redirect
+to=awssum.io
+
+[awssum.io]
+type=proxy
+host=localhost
+port=9367
+
+;; ----------------------------------------------------------------------------

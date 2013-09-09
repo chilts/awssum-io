@@ -1,0 +1,118 @@
+body {
+    color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #1b98f8;
+}
+
+/* LAYOUT CSS */
+#layout { }
+
+#nav {
+    background: rgb(37, 42, 58);
+    text-align: center;
+    padding: 2em 0;
+}
+
+#main {
+
+}
+
+/* HELPER CLASSES */
+.primary-button,
+.secondary-button {
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+.primary-button {
+    color: #fff;
+    background: #1b98f8;
+    margin: 1em 0;
+}
+.secondary-button {
+    background: #fff;
+    border: 1px solid #ddd;
+    color: #666;
+    padding: 0.5em 2em;
+    font-size: 80%;
+}
+
+
+
+/* Vertical Navigation Styles */
+#nav .pure-menu {
+    background: transparent;
+    border: none;
+    text-align: left;
+}
+    #nav .pure-menu a:hover,
+    #nav .pure-menu a:focus {
+        background: rgb(55, 60, 90);
+    }
+    #nav .pure-menu a {
+        color: #fff;
+        margin-left: 0.5em;
+    }
+    #nav .pure-menu-heading {
+        border-bottom: none;
+        font-size:110%;
+        color: rgb(75, 113, 151);
+    }
+
+    #nav .nav-menu-button {
+        display: none;
+    }
+
+    .version {
+        color: rgb(75, 113, 151);
+    }
+
+    .label-personal,
+    .label-work,
+    .label-travel {
+        width: 15px;
+        height: 15px;
+        display: inline-block;
+        margin-right: 0.5em;
+        border-radius: 3px;
+    }
+    .label-personal {
+        background: #ffc94c;
+    }
+    .label-work {
+        background: #41ccb4;
+    }
+    .label-travel {
+        background: #40c365;
+    }
+
+
+/* Content Styles */
+.content-header, .content-body, .content-footer {
+    padding: 1em 2em;
+}
+    .content-header {
+        border-bottom: 1px solid #ddd;
+    }
+
+        .content-title {
+            margin: 0.5em 0 0;
+        }
+        .content-subtitle {
+            font-size: 1em;
+            margin: 0;
+            font-weight: normal;
+        }
+            .content-subtitle span {
+                color: #999;
+            }
+    .content-controls {
+        margin-top: 2em;
+        text-align: right;
+    }
+        .content-controls .secondary-button {
+            margin-bottom: 0.3em;
+        }

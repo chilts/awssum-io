@@ -1,0 +1,29 @@
+extends layout.jade
+
+block page
+  .content
+    .content-header.pure-g
+      .pure-u-1-2
+        h1.content-title= provider.name
+        p.content-subtitle
+          span= provider.version
+          | , 
+          a(href="http://npm.im/#{provider.name}") npm</a>
+          | , 
+          a(href="https://github.com/awssum/#{provider.name}") github
+          | .
+
+      .pure-u-1-2.content-controls
+        for item in provider.submenu
+          a.pure-button.secondary-button(href="#{item.href}")= item.title
+
+    .content-body
+      h2 #{provider.provider}
+
+      h3 Installing
+
+      p.
+        This provider package will be installed alongside any awssum-#{provider.provider}-&lt;service&gt; so there is no need to depend
+        on it directly from your <code>package.json</code> or install it separately.
+
+      block provider
