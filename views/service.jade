@@ -47,9 +47,14 @@ block page
               th(style="width: 20%;") Type
               th(style="width: 50%;") Notes
           tbody
-            each param, paramName in op.args
+            if Object.keys(op.args).length == 0
               tr
-                td= paramName
-                td= param.required || false
-                td= param.type
-                td= param.notes
+                td(colspan="4")
+                  em This operation takes no arguments.
+            else
+              each param, paramName in op.args
+                tr
+                  td= paramName
+                  td= param.required || false
+                  td= param.type
+                  td= param.notes
