@@ -1,17 +1,40 @@
 {
-    "name": "awssum-io",
-    "version": "0.1.0",
-    "private": true,
+    "name"        : "awssum-io",
+    "version"     : "0.1.0",
+    "description" : "The AwsSum docs site.",
+    "private"     : true,
 
-    "scripts": {
-        "start": "node app.js"
+    "scripts" : {
+        "start" : "node app.js"
     },
 
-    "dependencies": {
-        "awssum-amazon-s3"             : "*",
-        "awssum-amazon-ec2"            : "*",
-        "awssum-amazon-cloudformation" : "*",
-        "awssum-amazon-dynamodb"       : "*",
+    "dependencies" : {
+        "awssum-amazon-autoscaling"      : "*",
+        "awssum-amazon-cloudformation"   : "*",
+        "awssum-amazon-cloudfront"       : "*",
+        "awssum-amazon-cloudsearch"      : "*",
+        "awssum-amazon-cloudwatch"       : "*",
+        "awssum-amazon-dynamodb"         : "*",
+        "awssum-amazon-ec2"              : "*",
+        "awssum-amazon-elasticache"      : "*",
+        "awssum-amazon-elasticbeanstalk" : "*",
+        "awssum-amazon-elb"              : "*",
+        "awssum-amazon-emr"              : "*",
+        "awssum-amazon-fps"              : "*",
+        "awssum-amazon-glacier"          : "*",
+        "awssum-amazon-iam"              : "*",
+        "awssum-amazon-imd"              : "*",
+        "awssum-amazon-importexport"     : "*",
+        "awssum-amazon-rds"              : "*",
+        "awssum-amazon-redshift"         : "*",
+        "awssum-amazon-route53"          : "*",
+        "awssum-amazon-s3"               : "*",
+        "awssum-amazon-ses"              : "*",
+        "awssum-amazon-simpledb"         : "*",
+        "awssum-amazon-sns"              : "*",
+        "awssum-amazon-sqs"              : "*",
+        "awssum-amazon-storagegateway"   : "*",
+        "awssum-amazon-sts"              : "*",
 
         "express": "3.4.0",
         "jade": "*"

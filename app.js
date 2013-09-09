@@ -14,7 +14,7 @@ var path = require('path');
 var express = require('express');
 
 // local
-var routes = require('./lib/routes.js');
+var awssum = require('./lib/awssum.js');
 var services = require('./lib/services.js');
 var providers = require('./lib/providers.js');
 
@@ -38,7 +38,13 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
-app.get('/', routes.index);
+app.get('/', function(req, res, next) {
+    res.render('index', {
+        awssum    : awssum,
+        providers : providers,
+        services  : services,
+    });
+});
 
 app.get('/:provider', function(req, res, next) {
     // make sure this provider exists
@@ -48,9 +54,11 @@ app.get('/:provider', function(req, res, next) {
         return next();
     }
 
-    var data = providers[path];
     res.render('provider', {
-        provider : data
+        awssum    : awssum,
+        providers : providers,
+        services  : services,
+        provider  : providers[path],
     });
 
 });
@@ -66,9 +74,11 @@ app.get('/:provider/:service', function(req, res, next) {
         return next();
     }
 
-    var data = services[path];
     res.render('service', {
-        service : data
+        awssum    : awssum,
+        providers : providers,
+        services  : services,
+        service   : services[path],
     });
 });
 

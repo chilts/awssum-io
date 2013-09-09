@@ -6,7 +6,8 @@ block page
       .pure-u-1-2
         h1.content-title= provider.name
         p.content-subtitle
-          span= provider.version
+          |  
+          span v#{provider.package.version}
           | , 
           a(href="http://npm.im/#{provider.name}") npm</a>
           | , 

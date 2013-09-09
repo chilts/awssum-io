@@ -26,17 +26,17 @@ block page
         $ npm install #{service.name}
 
       p.
-        Note: Since this package <code>peerDepends</code> on both <code>awssum-#{service.provider.toLowerCase()}</code>
+        Note: Since this package <code>peerDepends</code> on both <code>awssum-#{service.provider}</code>
         and <code>awssum</code>, there is no need for you to depend on these in your <code>package.json</code>.
 
       hr
 
       h3 Operations
 
-      for op in Object.keys(service.operation).sort()
-        h4 #{op} 
+      each op, opName in service.operation
+        h4 #{opName} 
           small
-            a(href=service.operation[op].url,target="_new") Open docs on AWS
+            a(href=op.url,target="_new") Open docs on AWS
 
         h5 Params
         table.pure-table.pure-table-striped(style="width: 100%;")
@@ -47,12 +47,9 @@ block page
               th(style="width: 20%;") Type
               th(style="width: 50%;") Notes
           tbody
-            for paramName in Object.keys(service.operation[op].args)
-              data = service.operation[op].args[paramName]
+            each param, paramName in op.args
               tr
                 td= paramName
-                td= data.required
-                td= data.type
-                td= data.notes
-
-      block service
+                td= param.required || false
+                td= param.type
+                td= param.notes
