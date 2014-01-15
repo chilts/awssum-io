@@ -1,10 +1,10 @@
 ;; ----------------------------------------------------------------------------
 
-[www.awssum.localhost.chilts.org]
+[www.localhost.awssum.io]
 type=redirect
 to=awssum.io
 
-[awssum.localhost.chilts.org]
+[localhost.awssum.io]
 type=proxy
 host=localhost
 port=9367
