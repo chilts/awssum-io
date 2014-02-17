@@ -20,6 +20,8 @@ var providers = require('./lib/providers.js');
 
 // ----------------------------------------------------------------------------
 
+process.title = 'awssum.io';
+
 var app = express();
 
 // all environments
