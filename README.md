@@ -1,3 +1,5 @@
+NOTE: AwsSum is now deprecated. Please use [aws-sdk](https://www.npmjs.org/package/aws-sdk) instead.
+
 ```
  _______           _______  _______           _______    _________ _______ 
 (  ___  )|\     /|(  ____ \(  ____ \|\     /|(       )   \__   __/(  ___  )
@@ -11,8 +13,6 @@
 ```
 
 This is the AwsSum code repo for the [awssum.io](http://awssum.io/) site.
-
-NOTE: AwsSum is now deprecated. Please use [aws-sdk](https://www.npmjs.org/package/aws-sdk) instead.
 
 # Author #
 
