@@ -12,6 +12,8 @@
 
 This is the AwsSum code repo for the [awssum.io](http://awssum.io/) site.
 
+NOTE: AwsSum is now deprecated. Please use [aws-sdk](https://www.npmjs.org/package/aws-sdk) instead.
+
 # Author #
 
 Written by [Andrew Chilton](http://chilts.org/) - [Blog](http://chilts.org/blog/) -
